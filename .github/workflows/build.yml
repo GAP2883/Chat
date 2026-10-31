@@ -14,6 +14,8 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
+      with:
+          lfs: true
 
     # --- DEBUG & EXTRACTION STEP ---
     # This lists the directory contents to ensure your zip file actually exists before unzipping
